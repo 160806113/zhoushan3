@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>小试身手II</title>
+	<style type="text/css">
+		body{
+			position: relative;
+		}
+		#div1{
+			position: absolute;
+			width: 1610px;
+			height: 860px;
+			background-color: #ebe9dd;
+			margin-top: 40px;
+			margin-left: 40px;
+		}
+		#div2{
+			position: absolute;
+			width: 1598px;
+			height: 845px;
+			background-image: url(images/x2.png);
+			margin-top: 47px;
+			margin-left: 46px;
+		}
+		#div3{
+			position: absolute;
+			width: 1598px;
+			height: 845px;
+			background-color: rgba(188,171,162,0.60);
+		}
+		#p1{
+			font-family: STFangsong;
+			font-size: 75px;
+			color:#735445;
+			text-shadow: 2px 5px 8px ;
+		}
+		.p2{
+			font-family: STFangsong;
+			font-size: 35px;
+			font-weight: bold;
+			color: #735445;
+		}
+		#span{
+			color: #89745B;
+			font-size: 30px;
+		}
+		.p3{
+			display: inline-block;
+			font-family: STFangsong;
+			font-size: 30px;
+			color:whitesmoke;
+			margin: 0 auto;
+		}
+		.btn{
+			display: inline-block;
+			background-color:#5AA3ED;
+			color: antiquewhite;
+			width: 75px;
+			height: 40px;
+			font-size: 25px;
+		}
+		#divxa{
+			position: absolute;
+			width: 300px;
+			height: 40px;
+			margin-top: 800px;
+			margin-left: 655px;
+			font-family: "STFangsong,mr-de-haviland";
+			font-size: 20px;
+		}
+		a:link{
+			color: black;
+		}
+		a:hover{
+			color: black;
+		}
+		a:visited{
+			color: black;
+		}
+		.formBtn{
+			text-decoration: none;
+			font-size: 22px;
+		}
+	</style>
+</head>
+
+<body bgcolor="#BCABA2">
+	<div id="div1"></div>
+	<div id="div2">
+		<div id="div3">
+		    <h1 id="p1" style="text-align: center">小试身手</h1><br>
+		    <p class="p2">&nbsp;&nbsp;&nbsp;单选题</p>
+		    <dl>
+                <dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="span">1.</span><p style="display: inline-block" class="p3">画渔民画所用的颜料是</p></dt><br>
+                <dd>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><input type="radio" name="radio" value="1"><p style="display: inline-block" class="p3">a.蜡笔</p></label><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><input type="radio" name="radio" value="3"><p style="display: inline-block" class="p3">b.水彩</p></label><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><input type="radio" name="radio" value="2"><p style="display: inline-block" class="p3">c.丙烯</p></label><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><input type="radio" name="radio" value="5"><p style="display: inline-block" class="p3">d.油画颜料</p></label>
+                </dd><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="formBtn">提交</a>
+            </dl>
+		</div>
+		
+		<div id="divxa">
+				<a href="yanliao.html" style="text-decoration: none;"><img src="images/back.png" alt="" width="30px" height="13px">作画颜料</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="zhuti.html" style="text-decoration: none;">主题<img src="images/next.png" alt="" width="30px" height="13px"></a>
+		</div>
+	</div>
+	<script type="text/javascript">
+    document.getElementsByClassName('formBtn')[0].onclick = function(){
+        var radio = document.getElementsByName('radio'),vals=null;
+        for(var i=0;i<radio.length;i++){
+            if(radio[i].checked){
+                vals=radio[i].value;
+                (radio[i].value%2==0)? alert('正确！'):alert('错误！C选项为正确选项');
+            }
+        }  
+        if(vals==null){
+            alert('请选择答案后再提交')
+        }  
+    }
+</script>
+</body>
+</html>

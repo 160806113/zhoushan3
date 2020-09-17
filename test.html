@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+	<dl>
+                <dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="span">1.</span><p style="display: inline-block" class="p3">下列说法错误的是</p></dt><br>
+                <dd>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><input type="radio" name="radio" value="1"><p style="display: inline-block" class="p3">a.舟山渔民画最早起源与传统丹青绘画</p></label><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><input type="radio" name="radio" value="3"><p style="display: inline-block" class="p3">b.舟山渔民画大多反应劳动场景和对生活的的热爱</p></label><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><input type="radio" name="radio" value="2"><p style="display: inline-block" class="p3">c.舟山渔民画的绘画技法为写实</p></label><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><input type="radio" name="radio" value="5"><p style="display: inline-block" class="p3">d.画作风格自由色彩狂放独具创造型</p></label>
+                </dd><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="formBtn">提交</a>
+            </dl>
+		</div>
+		
+		<div id="divxa">
+				<a href="zhuti.html" style="text-decoration: none;"><img src="images/back.png" alt="" width="30px" height="13px">主题</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="xinshang.html" style="text-decoration: none;">画作欣赏<img src="images/next.png" alt="" width="30px" height="13px"></a>
+		</div>
+	</div>
+	<script type="text/javascript">
+    document.getElementsByClassName('formBtn')[0].onclick = function(){
+        var radio = document.getElementsByName('radio'),vals=null;
+        for(var i=0;i<radio.length;i++){
+            if(radio[i].checked){
+                vals=radio[i].value;
+                (radio[i].value%2==0)? alert('正确！'):alert('错误！C选项为正确选项');
+            }
+        }  
+        if(vals==null){
+            alert('请选择答案后再提交')
+        }  
+    }
+</body>
+</html>

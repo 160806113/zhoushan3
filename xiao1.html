@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>小试身手I</title>
+	<style type="text/css">
+		body{
+			position: relative;
+		}
+		#div1{
+			position: absolute;
+			width: 1610px;
+			height: 860px;
+			background-color: #ebe9dd;
+			margin-top: 40px;
+			margin-left: 40px;
+		}
+		#div2{
+			position: absolute;
+			width: 1598px;
+			height: 845px;
+			background-image: url(images/x2.png);
+			margin-top: 47px;
+			margin-left: 46px;
+		}
+		#div3{
+			position: absolute;
+			width: 1598px;
+			height: 845px;
+			background-color: rgba(188,171,162,0.60);
+		}
+		#p1{
+			font-family: STFangsong;
+			font-size: 75px;
+			color:#735445;
+			text-shadow: 2px 5px 8px ;
+		}
+		.p2{
+			font-family: STFangsong;
+			font-size: 35px;
+			font-weight: bold;
+			color: #735445;
+		}
+		.b{
+			color: #89745B;
+			font-size: 30px;
+		}
+		.p3{
+			display: inline-block;
+			font-family: STFangsong;
+			font-size: 30px;
+			color:whitesmoke;
+		}
+		.btn{
+			display: inline-block;
+			background-color:#5AA3ED;
+			color: antiquewhite;
+			width: 75px;
+			height: 40px;
+			font-size: 25px;
+		}
+		#divxa{
+			position: absolute;
+			width: 300px;
+			height: 40px;
+			margin-top: 285px;
+			margin-left: 670px;
+			font-family: STFangsong;
+			font-size: 20px;
+		}
+		a:link{
+			color: black;
+		}
+		a:hover{
+			color:#B05254;
+		}
+		a:visited{
+			color: black;
+		}
+	</style>
+</head>
+
+<body bgcolor="#BCABA2">
+	<div id="div1"></div>
+	<div id="div2">
+		<div id="div3">
+		    <h1 id="p1" style="text-align: center">小试身手</h1><br>
+		    <p class="p2">&nbsp;&nbsp;&nbsp;判断题</p>
+		    <p class="p3">&nbsp;&nbsp;&nbsp;<span class="b">1.</span>1987年11月，舟山渔民画在北京中国美术馆展出。</p>
+		    <div style="display: inline-block">
+			    &nbsp;<input type="button" value="true" class="btn" onclick="MsgBox1()"/>&nbsp;&nbsp;
+		        <input type="button" value="false" class="btn" onclick="MsgBox2()"/>
+		    </div>
+		    <p class="p3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="b">2.</span>舟山渔民画中蕴含了强烈的生活气息和作者独特的主观感受。</p>
+		    <div style="display: inline-block">
+			    &nbsp;<input type="button" value="true" class="btn" onclick="MsgBox1()"/>&nbsp;&nbsp;
+		        <input type="button" value="false" class="btn" onclick="MsgBox2()"/>
+		    </div>
+			<div id="divxa">
+				<a href="mulu.html" style="text-decoration: none;"><img src="images/back.png" alt="" width="30px" height="13px">形式与风格</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="yanliao.html" style="text-decoration: none;">作画颜料<img src="images/next.png" alt="" width="30px" height="13px"></a>
+			</div>
+		</div>
+	</div>
+	<script language="javascript">
+        function MsgBox1(){
+            alert("正确！"); 
+        }
+        function MsgBox2(){
+			alert("错误！");
+		}
+	</script>
+</body>
+</html>
